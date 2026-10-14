@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://gadenhub.netlify.app/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>https://www.gadenhub.com/</loc></url>
+<url><loc>https://www.gadenhub.com/marketplace</loc></url>
+<url><loc>https://www.gadenhub.com/farmers</loc></url>
+<url><loc>https://www.gadenhub.com/community</loc></url>
+<url><loc>https://www.gadenhub.com/prices</loc></url>
+<url><loc>https://www.gadenhub.com/guides</loc></url>
+<url><loc>https://www.gadenhub.com/forum</loc></url>
+<url><loc>https://www.gadenhub.com/tools</loc></url>
+<url><loc>https://www.gadenhub.com/services</loc></url>
+<url><loc>https://www.gadenhub.com/gallery</loc></url>
+<url><loc>https://www.gadenhub.com/support</loc></url>
+<url><loc>https://www.gadenhub.com/about</loc></url>
+<url><loc>https://www.gadenhub.com/safety</loc></url>
+<url><loc>https://www.gadenhub.com/contact</loc></url>
+<url><loc>https://www.gadenhub.com/faq</loc></url>
+<url><loc>https://www.gadenhub.com/terms</loc></url>
+<url><loc>https://www.gadenhub.com/privacy</loc></url>
+<url><loc>https://www.gadenhub.com/businesses</loc></url>
 </urlset>

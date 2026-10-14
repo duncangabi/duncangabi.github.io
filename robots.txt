@@ -1,3 +1,8 @@
 User-agent: *
 Allow: /
-Sitemap: https://gadenhub.netlify.app/sitemap.xml
+Disallow: /admin
+Disallow: /messages
+Disallow: /profile
+Disallow: /login
+Disallow: /join
+Sitemap: https://www.gadenhub.com/sitemap.xml
