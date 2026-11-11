@@ -1,14 +1,17 @@
 # Gaden Hub
 
-Single-page site (index.html) on Vercel + Supabase. Admin dashboard is built into index.html (script id `admin-embedded`).
+Single-page site (`index.html`) on Vercel + Supabase. Admin dashboard is built into `index.html` (script id `admin-embedded`).
+
+Live: https://www.gadenhub.com
 
 ## Files
 - `index.html` – the whole app (CSS, JS, admin)
 - `assets/img/` – site images (referenced by the `IMG` map in index.html)
 - `sw.js` + `manifest.webmanifest` – installable app, fast repeat visits, offline shell
-- `vercel.json` – clean URLs, known-route rewrites (unknown URLs return a real 404), cache headers
+- `vercel.json` – clean URLs, known-route rewrites, **security headers** (CSP, X-Frame-Options, Permissions-Policy, etc.)
 - `404.html` – real not-found page
 - `supabase-setup.sql` – ALL database rules and server functions. Re-run after every change to it.
+- `SECURITY.md` – security strengths and remaining hardening recommendations
 
 ## Deploy checklist
 1. Run `supabase-setup.sql` in the Supabase SQL Editor (do this before or with the deploy).
@@ -18,3 +21,6 @@ Single-page site (index.html) on Vercel + Supabase. Admin dashboard is built int
 5. Vercel > Analytics: enable Web Analytics (the script is already in the page).
 6. In index.html set `SOCIAL={facebook:"",...}` to your page links; empty ones stay hidden.
 7. Change `SUPPORT_EMAIL` to a domain address when you have one.
+
+## Security
+Real authorization is enforced by Supabase Row Level Security. See `SECURITY.md` for details and the remaining recommendations (especially moving away from the large inline script so CSP can be tightened).
