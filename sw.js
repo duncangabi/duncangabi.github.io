@@ -1,8 +1,8 @@
 /* Gaden Hub service worker: makes repeat visits fast and the app shell open offline.
    Pages are network-first (so new deploys show immediately); images are cached after first use.
    Supabase/API traffic is never touched. Bump V to force every device to drop old caches. */
-const V = 'gh-v2';
-const SHELL = ['/', '/manifest.webmanifest', '/icon-192.png', '/assets/img/logo.png'];
+const V = 'gh-v3';
+const SHELL = ['/', '/manifest.webmanifest', '/icon-192.png', '/icon-512.png'];
 const SUPA_JS = 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@';
 
 self.addEventListener('install', e => {
